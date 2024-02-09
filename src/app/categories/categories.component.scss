@@ -1,0 +1,27 @@
+.categories{
+    ::ng-deep{
+        .p-card{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: none;
+            .p-card-body{
+                padding: 0px;
+                display: flex;
+                justify-content: center;
+            }
+            .p-card-content{
+                padding: 0px;
+                padding-bottom: 10px;
+                text-align: center;
+            }
+        }
+        .p-tieredmenu.p-tieredmenu-overlay{
+            top: 110px !important;
+        }
+    }
+    img{
+        height: 64px;
+        width: 64px;
+    };
+}

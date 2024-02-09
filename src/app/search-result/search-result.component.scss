@@ -1,0 +1,87 @@
+::ng-deep {
+    .p-breadcrumb {
+        border: none;
+        padding-bottom: 0.5rem;
+
+        ul {
+            li.p-breadcrumb-chevron {
+                font-size: 0.5rem;
+            }
+
+            li {
+                .p-menuitem-link {
+                    .p-menuitem-text {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-tabmenu {
+        .p-tabmenu-nav {
+            width: fit-content;
+            .p-menuitem-text{
+                font-size: 0.8rem;
+            }
+            .p-tabmenuitem {
+                .p-menuitem-link {
+                    color: black;
+                    border-width: 0px;
+                }
+            }
+            .p-tabmenuitem.p-highlight{
+                .p-menuitem-link{
+                    border-width: 0 0 1px 0;
+                }
+            }
+        }
+    }
+
+    .p-tag{
+        flex-direction: row-reverse;
+        background: #388e3c;
+        font-size: 0.7rem;
+        cursor: pointer;
+        .p-tag-icon{
+            margin-left: 0.25rem;
+            margin-right: 0;
+            font-size: 0.6rem;
+        }
+    }
+
+    .p-multiselect{
+        width: 100%;
+    }
+
+    .p-scrolltop{
+        top: 20px;
+        left: 50%;
+        border-radius: 5px;
+        border: 1px solid #1077da;
+        width: 8rem;
+        height: 2.5rem;
+        .p-scrolltop.p-link{
+            background: white;
+        }
+    }
+
+    .price-dropdowns{
+        .p-dropdown{
+            height: 1.5rem;
+        }
+        .p-inputtext{
+            padding: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 576px){
+    .filter-tabmenu{
+        ::ng-deep{
+            .p-tabmenu-nav-content{
+                width: 15rem;
+            }
+        }
+    }
+}

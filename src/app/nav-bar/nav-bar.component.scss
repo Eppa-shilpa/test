@@ -1,0 +1,194 @@
+::ng-deep {
+    p-menubar {
+        background-color: #2874f0;
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .p-menubar {
+        border: none;
+        background-color: #2874f0;
+
+        .p-menuitem.p-menuitem-active {
+            .p-menuitem-link {
+                color: white;
+                background: #2874f0;
+            }
+        }
+
+        .p-menubar-root-list {
+            .p-menuitem {
+                .p-menuitem-link:not(.p-disabled):hover {
+                    background-color: #2874f0;
+
+                    .p-menuitem-icon {
+                        color: white;
+                    }
+
+                    .p-menuitem-text {
+                        color: white;
+                    }
+
+                    .p-submenu-icon {
+                        color: white;
+                    }
+                }
+
+                .p-menuitem-link {
+                    box-shadow: none;
+                    padding: 1rem 1rem;
+
+                    .p-submenu-icon {
+                        color: white;
+                    }
+
+                    .p-menuitem-icon {
+                        color: white;
+                    }
+
+                    .p-menuitem-text {
+                        color: white;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .p-submenu-list {
+            padding: 0;
+
+            .p-menuitem {
+                .p-menuitem-link:not(.p-disabled):hover {
+                    background-color: white;
+
+                    .p-menuitem-icon {
+                        color: #2874f0;
+                    }
+
+                    .p-menuitem-text {
+                        color: black;
+                    }
+                }
+
+                .p-menuitem-link {
+                    background-color: white;
+                    border-bottom: 1px solid #ededed;
+
+                    .p-menuitem-icon {
+                        color: #2874f0;
+                    }
+
+                    .p-menuitem-text {
+                        color: black;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .p-menubar-start {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        a {
+            color: white;
+            font-weight: 600;
+        }
+    }
+
+    .p-inputtext {
+        border-radius: 0px;
+    }
+
+    .p-button {
+        padding: 0.3rem 2.5rem;
+        border-radius: 0px;
+
+        .p-button-label {
+            font-weight: 600;
+        }
+    }
+
+    .p-button.p-button-text {
+        background-color: white;
+        border-color: white;
+    }
+
+    .p-button.p-button-text:enabled:hover {
+        background-color: white;
+        border: white;
+    }
+}
+
+.search{
+    width: 500px;
+}
+
+.seller-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.seller-link:hover {
+    color: white;
+}
+
+@media screen and (max-width: 960px) {
+    ::ng-deep {
+        .p-menubar {
+            .p-menubar-root-list {
+                .p-menuitem {
+                    .p-menuitem-link {
+                        .p-menuitem-text {
+                            color: #495057
+                        }
+                        .p-menuitem-icon{
+                            color: #495057;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .search{
+        width: 50%;
+    }
+}
+
+// .icon{
+//     ::ng-deep{
+//         .pi{
+//             // font-size: 1.3rem;
+//         }
+//     }
+// }
+
+// .label{
+//     margin-bottom: 0.5rem;
+// }
+
+// .nav-bar-right{
+//     .label{
+//         font-size: 1.2rem;
+//     }
+//     .icon{
+//         ::ng-deep{
+//             .pi{
+//                 font-size: 1.3rem;
+//             }
+//         }
+//     }
+// }
+
+// @media screen and (max-width: 1200px){
+//         .label{
+//             display: none;
+//         }
+//         .nav-bar-right{
+//             gap: 1rem !important;
+//         }
+// }

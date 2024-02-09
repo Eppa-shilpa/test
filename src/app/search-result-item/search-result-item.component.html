@@ -1,0 +1,99 @@
+<div class="col-12 row border-bottom m-0" style="background: white;">
+    <div class="col col-lg-2 col-md-12 col-sm-12 p-3">
+        <div class="d-flex justify-content-end">
+            <i class="pi pi-heart"></i>
+        </div>
+        <div style="text-align: center;">
+            <img style="width: 80%; height: 100%; margin: auto;" class="img-fluid prod-img"
+                src="https://rukminim2.flixcart.com/image/312/312/xif0q/mobile/6/l/2/-original-imagrn6dfyqhz3gg.jpeg?q=70">
+        </div>
+        <div class="my-2">
+            <p-checkbox value="New York" inputId="add"></p-checkbox>
+            <label class="ms-2" style="font-size: 14px;" for="add">Add to Compare</label>
+        </div>
+    </div>
+    <div class="col col-lg-7 col-md-12 col-sm-12 p-3 prod-desc">
+        <h5>OPPO Reno10 5G (Ice Blue, 256 GB)</h5>
+        <div class="d-flex gap-2">
+            <div (mouseenter)="op.toggle($event)">
+                <p-overlayPanel #op>
+                    <ng-template pTemplate="content">
+                        <div class="d-flex gap-3 align-items-center">
+                            <div class="text-center">
+                                <h1 class="m-0">4.2<i class="pi pi-star-fill"></i></h1>
+                                <p class="m-0 text-muted">12,874 Ratings</p>
+                                <p class="m-0 text-muted">1,874 Reviews</p>
+                            </div>
+                            <div>
+                                <div class="d-flex gap-2 align-items-center rating-overlay">
+                                    <p class="m-0">5 <i class="pi pi-star-fill"></i></p>
+                                    <div class="card" style="width: 100px;">
+                                        <p-progressBar [value]="100"></p-progressBar>
+                                    </div>
+                                    <p class="m-0">1764</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center rating-overlay">
+                                    <p class="m-0">4 <i class="pi pi-star-fill"></i></p>
+                                    <div class="card" style="width: 100px;">
+                                        <p-progressBar [value]="80"></p-progressBar>
+                                    </div>
+                                    <p class="m-0">1564</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center rating-overlay">
+                                    <p class="m-0">3 <i class="pi pi-star-fill"></i></p>
+                                    <div class="card" style="width: 100px;">
+                                        <p-progressBar [value]="50"></p-progressBar>
+                                    </div>
+                                    <p class="m-0">1264</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center rating-overlay">
+                                    <p class="m-0">2 <i class="pi pi-star-fill"></i></p>
+                                    <div class="card" style="width: 100px;">
+                                        <p-progressBar [value]="30"></p-progressBar>
+                                    </div>
+                                    <p class="m-0">164</p>
+                                </div>
+                                <div class="d-flex gap-2 align-items-center rating-overlay">
+                                    <p class="m-0">1 <i class="pi pi-star-fill"></i></p>
+                                    <div class="card" style="width: 100px;">
+                                        <p-progressBar [value]="10"></p-progressBar>
+                                    </div>
+                                    <p class="m-0">64</p>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-overlayPanel>
+                <p-tag icon="pi pi-star-fill" value="4.2"></p-tag>
+            </div>
+            <div>
+                <p class="m-0"> 12,825 Ratings & 1,873 Reviews</p>
+            </div>
+        </div>
+        
+        <ul class="mt-3">
+            <li>8 GB RAM | 256 GB ROM</li>
+            <li>17.02 cm (6.7 inch) Full HD+ Display</li>
+            <li>64MP + 32MP + 8MP | 32MP Front Camera</li>
+            <li>5000 mAh Battery</li>
+            <li>Dimensity 7050 Processor</li>
+            <li>1 Year Manufacturer Warranty for Phone and 6 Months Warranty for In the Box Accessories</li>
+        </ul>
+    </div>
+    <div class="col col-lg-3 col-md-12 col-sm-12 p-3">
+        <div class="d-flex gap-3 align-items-center">
+            <h4 class="m-0">32,999</h4>
+            <img class="f-assured"
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/fa_62673a.png">
+        </div>
+        <div class="d-flex gap-2 mt-2">
+            <p class="m-0 text-decoration-line-through">38,999</p>
+            <p class="m-0 text-success">15% off</p>
+        </div>
+        <div style="font-size: 12px;">
+            <p class="m-0">Free Delivery</p>
+            <p class="m-0">No Cost EMI from 5,500/month</p>
+        </div>
+        <p class="m-0 text-success fw-bold">Bank Offer</p>
+    </div>
+</div>

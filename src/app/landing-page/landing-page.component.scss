@@ -1,0 +1,32 @@
+::ng-deep{
+    .p-carousel {
+        .p-carousel-indicators{
+            display: none !important;
+        }
+        .p-carousel-content{
+            .p-carousel-prev, .p-carousel-next{
+                width: 3rem;
+                height: 6rem;
+                border-radius: 0px;
+                position: absolute;
+                background-color: white;
+                margin: 0;
+                .pi{
+                    font-size: 1.5rem;
+                    color: black;
+                }
+            }
+            .p-carousel-prev{
+                left: 0;
+                z-index: 1;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
+            }
+            .p-carousel-next{
+                right: 0;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+<app-nav-bar></app-nav-bar>
+<div class="container row mt-3 mx-auto p-0 cart">
+    <div id="menu-bar" class="col col-lg-9 col-sm-12 p-0 d-flex flex-column border-start border-end mb-3" style="height: fit-content;">
+        <div>
+            <p-tabMenu [model]="items" [activeItem]="activeItem" (activeItemChange)="onActiveItemChange($event)"></p-tabMenu>
+        </div>
+        <div *ngIf="isFlipkart">
+            <div class="card rounded mt-2 p-2 d-flex flex-row align-items-center justify-content-between">
+                <div>
+                    <p class="m-0">From Saved Addresses</p>
+                </div>
+                <div>
+                    <p-button label="Enter Delivery Pincode" styleClass="p-button-outlined"></p-button>
+                </div>
+            </div>
+            <div class="card mt-2">
+                <app-cart-list-item></app-cart-list-item>
+                <app-cart-list-item></app-cart-list-item>
+                <app-cart-list-item></app-cart-list-item>
+                <app-cart-list-item></app-cart-list-item>
+            </div>
+            <div class="card sticky-card p-3 d-flex">
+                <p-button label="PLACE ORDER"></p-button>
+            </div>
+        </div>
+        <div class="grocery" *ngIf="!isFlipkart">
+            <div class="card p-5 mt-2 d-flex justify-content-center align-items-center">
+                <img class="img-fluid" style="height: 162px; width: auto;" src="https://rukminim2.flixcart.com/www/800/800/promos/16/05/2019/08dddd59-c0ff-4efd-8723-6d847f5df25f.png?q=90">
+                <h6 class="my-3">Your basket is empty!</h6>
+                <p style="font-size: 12px;">Enjoy upto 50% savings on Grocery</p>
+                <p-button label="Shop Now"></p-button>
+            </div>
+        </div>
+    </div>
+    <div id="price-details" class="col col-lg-3 col-sm-12" style="height: fit-content;">
+        <div class="d-flex flex-column">
+            <div class="card p-3 border-bottom" >
+                <h6 class="text-muted m-0">PRICE DETAILS</h6>
+                <hr>
+                <div class="pt-2 d-flex justify-content-between gap-3">
+                    <p>Price</p>
+                    <p>64,885</p>
+                </div>
+                <div class="pt-2 d-flex justify-content-between gap-3">
+                    <p>Discount</p>
+                    <p class="text-success">-29,539</p>
+                </div>
+                <div class="pt-2 d-flex justify-content-between gap-3">
+                    <p>Delivery Charges</p>
+                    <p class="text-success">Free</p>
+                </div>
+                <div class="py-2 d-flex justify-content-between gap-3 dotted-border">
+                    <p class="m-2 fs-5 fw-bold">Total Amount</p>
+                    <p class="m-2 fs-5 fw-bold">35,346</p>
+                </div>
+                <div>
+                    <p class="fw-bold text-success m-2 mb-0">You will save ₹29,539 on this order</p>
+                </div>
+            </div>
+            <div class="m-2 mt-3 p-2">
+                <div class="d-flex align-items-center gap-3">
+                    <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/shield_b33c0c.svg">
+                    <p style="font-size: 14px;" class="m-0 fw-bold text-muted">Safe and Secure Payments.Easy returns.100% Authentic products.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
