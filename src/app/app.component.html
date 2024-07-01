@@ -1,1 +1,9 @@
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
+<div (click)="parentClick()" class="d-flex p-3 gap-5">
+    <div class="card flex justify-content-center" (click)="childClick1($event)">
+        <p-dropdown [options]="cities" [(ngModel)]="selectedCity1" #ref1 optionLabel="name" [showClear]="true" placeholder="Select a City"></p-dropdown>
+    </div>
+    <div class="card flex justify-content-center" (click)="childClick2($event)">
+        <p-dropdown [options]="cities" [(ngModel)]="selectedCity2" #ref2 optionLabel="name" [showClear]="true" placeholder="Select a City"></p-dropdown>
+    </div>
+</div>
